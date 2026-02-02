@@ -25,7 +25,7 @@ public:
     /// @returns Returns image brightnes value.
     int GetBrightness() const { return brightness_; };
 
-    /// @returns true if class contains image.
+    /// @returns true if class does not contains image.
     bool Empty() const { return image_.empty(); }
 
 private:
