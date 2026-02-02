@@ -56,7 +56,7 @@ QPixmap ImageFileManipulator::GetImage() const {
         result.convertFromImage(convertToQImage(
                 brightness_ == 0 ? image_ : image_ + cv::Scalar(brightness_, brightness_, brightness_)));
     }
-    catch (std::exception& ex)
+    catch (const std::exception& ex)
     {
         std::ostringstream ss;
         ss << "Failed processing image content."
